@@ -114,8 +114,6 @@ $stmt->execute();
 
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-$user['username'] == $_GET['username'] ? $r = 'User Exists' : $r = 'Green Tick';
-
 echo $user['username'] == $_GET['username'] ? 'Not Available' : 'Available';
 ```
 `register.php`
