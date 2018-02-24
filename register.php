@@ -51,20 +51,19 @@ if (isset($_POST['send'])) {
     <input type="submit" value="Submit"/>
 </form>
 <pre>
-    <?php
-    if ($_POST) {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $data = [
-            'username' => $username,
-            'password' => $password
-        ];
-//        $pdo->prepare("INSERT INTO users VALUES (NULL, $username, $password)")->execute();
-        $insert_sql = "INSERT INTO users (id, username, password) VALUES ( null, $username, $password );";
-//        echo $insert_sql;
-    }
-    $select_sql = "SELECT * FROM users;";
-//    echo "<br>$select_sql";
-    ?>
+<!--    --><?php
+//        $username = $_POST['username'];
+//        $password = $_POST['password'];
+//        $submit_data = [
+//            'username' => $username,
+//            'password' => $password
+//        ];
+////        $pdo->prepare("INSERT INTO users VALUES (NULL, $username, $password)")->execute();
+////        $insert_sql = "INSERT INTO users (id, username, password) VALUES ( null, $username, $password );"
+////        echo $insert_sql;
+//    }
+//    $select_sql = "SELECT * FROM users;";
+////    echo "<br>$select_sql";
+//    ?>
 </pre>
 </html>
